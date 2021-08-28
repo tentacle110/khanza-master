@@ -6,7 +6,7 @@
     <!-- menu -->
 </div>
 <div class="container-fluid mt-5">
-  <div class="row">
+  <!-- <div class="row"> -->
     <div class="row">
         <div class="col-3">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -33,30 +33,30 @@
         </div>
         <div class="col-9">
         <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-a" role="tabpanel" aria-labelledby="v-pills-a-tab"><?php $this->load->view('menu/a.php');?></div>
-        <div class="tab-pane fade" id="v-pills-b" role="tabpanel" aria-labelledby="v-pills-b-tab"><?php $this->load->view('menu/b.php');?></div>
-        <div class="tab-pane fade" id="v-pills-c" role="tabpanel" aria-labelledby="v-pills-c-tab"><?php $this->load->view('menu/c.php');?></div>
-        <div class="tab-pane fade" id="v-pills-d" role="tabpanel" aria-labelledby="v-pills-d-tab"><?php $this->load->view('menu/d.php');?></div>
-        <div class="tab-pane fade" id="v-pills-e" role="tabpanel" aria-labelledby="v-pills-e-tab"><?php $this->load->view('menu/e.php');?></div>
-        <div class="tab-pane fade" id="v-pills-f" role="tabpanel" aria-labelledby="v-pills-f-tab"><?php $this->load->view('menu/f.php');?></div>
-        <div class="tab-pane fade" id="v-pills-g" role="tabpanel" aria-labelledby="v-pills-g-tab"><?php $this->load->view('menu/g.php');?></div>
-        <div class="tab-pane fade" id="v-pills-h" role="tabpanel" aria-labelledby="v-pills-h-tab"><?php $this->load->view('menu/h.php');?></div>
-        <div class="tab-pane fade" id="v-pills-i" role="tabpanel" aria-labelledby="v-pills-i-tab"><?php $this->load->view('menu/i.php');?></div>
-        <div class="tab-pane fade" id="v-pills-j" role="tabpanel" aria-labelledby="v-pills-j-tab"><?php $this->load->view('menu/j.php');?></div>
-        <div class="tab-pane fade" id="v-pills-k" role="tabpanel" aria-labelledby="v-pills-k-tab"><?php $this->load->view('menu/k.php');?></div>
-        <div class="tab-pane fade" id="v-pills-l" role="tabpanel" aria-labelledby="v-pills-l-tab"><?php $this->load->view('menu/l.php');?></div>
-        <div class="tab-pane fade" id="v-pills-m" role="tabpanel" aria-labelledby="v-pills-m-tab"><?php $this->load->view('menu/m.php');?></div>
-        <div class="tab-pane fade" id="v-pills-n" role="tabpanel" aria-labelledby="v-pills-n-tab"><?php $this->load->view('menu/n.php');?></div>
-        <div class="tab-pane fade" id="v-pills-o" role="tabpanel" aria-labelledby="v-pills-o-tab"><?php $this->load->view('menu/o.php');?></div>
-        <div class="tab-pane fade" id="v-pills-p" role="tabpanel" aria-labelledby="v-pills-p-tab"><?php $this->load->view('menu/p.php');?></div>
-        <div class="tab-pane fade" id="v-pills-q" role="tabpanel" aria-labelledby="v-pills-q-tab"><?php $this->load->view('menu/q.php');?></div>
-        <div class="tab-pane fade" id="v-pills-r" role="tabpanel" aria-labelledby="v-pills-r-tab"><?php $this->load->view('menu/r.php');?></div>
-        <div class="tab-pane fade" id="v-pills-s" role="tabpanel" aria-labelledby="v-pills-s-tab"><?php $this->load->view('menu/s.php');?></div>
+          <div class="tab-pane fade show active" id="v-pills-a" role="tabpanel" aria-labelledby="v-pills-a-tab"><?php $this->load->view('menu/a.php');?></div>
+          <div class="tab-pane fade" id="v-pills-b" role="tabpanel" aria-labelledby="v-pills-b-tab"><?php $this->load->view('menu/bw.php');?></div>
+          <div class="tab-pane fade" id="v-pills-c" role="tabpanel" aria-labelledby="v-pills-c-tab"><?php $this->load->view('menu/cw.php');?></div>
+          <div class="tab-pane fade" id="v-pills-d" role="tabpanel" aria-labelledby="v-pills-d-tab"><?php $this->load->view('menu/d.php');?></div>
+          <div class="tab-pane fade" id="v-pills-e" role="tabpanel" aria-labelledby="v-pills-e-tab"><?php $this->load->view('menu/e.php');?></div>
+          <div class="tab-pane fade" id="v-pills-f" role="tabpanel" aria-labelledby="v-pills-f-tab"><?php $this->load->view('menu/f.php');?></div>
+          <div class="tab-pane fade" id="v-pills-g" role="tabpanel" aria-labelledby="v-pills-g-tab"><?php $this->load->view('menu/g.php');?></div>
+          <div class="tab-pane fade" id="v-pills-h" role="tabpanel" aria-labelledby="v-pills-h-tab"><?php $this->load->view('menu/h.php');?></div>
+          <div class="tab-pane fade" id="v-pills-i" role="tabpanel" aria-labelledby="v-pills-i-tab"><?php $this->load->view('menu/i.php');?></div>
+          <div class="tab-pane fade" id="v-pills-j" role="tabpanel" aria-labelledby="v-pills-j-tab"><?php $this->load->view('menu/j.php');?></div>
+          <div class="tab-pane fade" id="v-pills-k" role="tabpanel" aria-labelledby="v-pills-k-tab"><?php $this->load->view('menu/k.php');?></div>
+          <div class="tab-pane fade" id="v-pills-l" role="tabpanel" aria-labelledby="v-pills-l-tab"><?php $this->load->view('menu/l.php');?></div>
+          <div class="tab-pane fade" id="v-pills-m" role="tabpanel" aria-labelledby="v-pills-m-tab"><?php $this->load->view('menu/m.php');?></div>
+          <div class="tab-pane fade" id="v-pills-n" role="tabpanel" aria-labelledby="v-pills-n-tab"><?php $this->load->view('menu/n.php');?></div>
+          <div class="tab-pane fade" id="v-pills-o" role="tabpanel" aria-labelledby="v-pills-o-tab"><?php $this->load->view('menu/o.php');?></div>
+          <div class="tab-pane fade" id="v-pills-p" role="tabpanel" aria-labelledby="v-pills-p-tab"><?php $this->load->view('menu/p.php');?></div>
+          <div class="tab-pane fade" id="v-pills-q" role="tabpanel" aria-labelledby="v-pills-q-tab"><?php $this->load->view('menu/q.php');?></div>
+          <div class="tab-pane fade" id="v-pills-r" role="tabpanel" aria-labelledby="v-pills-r-tab"><?php $this->load->view('menu/r.php');?></div>
+          <div class="tab-pane fade" id="v-pills-s" role="tabpanel" aria-labelledby="v-pills-s-tab"><?php $this->load->view('menu/s.php');?></div>
         </div>
         </div>
-        </div>
+    </div>
 
-  </div>
+  <!-- </div> -->
 
 </div>
 <!-- copyright -->
