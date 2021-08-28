@@ -1,3 +1,4 @@
+<div class="row d-flex justify-content-center">
 <div class="col-lg-3 col-md-3 col-sm-12 mb-30">
     <a href="#">
         <div class="card-box pd-30 height-50-p">
@@ -47,4 +48,6 @@
             </div>
         </div>
     </a>
+</div>
+
 </div>
