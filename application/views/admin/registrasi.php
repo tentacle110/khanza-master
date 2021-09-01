@@ -35,10 +35,13 @@
                 <div class="pull-left">
                     <h2 class="text-blue h2">Registrasi Periksa Hari Ini</h2>
                 </div>
+                <div class="pull-left ml-4">
+                    <button type="button" class="btn btn-outline-primary" id="btn-add-reg"><i class="fa fa-caret-down"></i> </button>
+                </div>
             </div>
 
             <form action="<?= base_url(); ?>admin/registrasi/insert_registrasi" method="post">
-                <div class="row">
+                <div class="row" id="form-add-reg">
                     <div class="col-md-5">
                         <label class="form-label">No. Registrasi</label>
                         <input type="text" class="form-control" name="no_registrasi" value="<?= $no_registrasi; ?>" readonly>
@@ -217,11 +220,11 @@
                                     <th scope="col">Status Bayar</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="DataTablesRegistrasiBody">
                                 <?php foreach ($reg_awal as $reg) : ?>
-                                    <tr>
+                                    <tr id="rcmenu">
                                         <td><?= $reg->no_reg; ?></td>
-                                        <td><?= $reg->no_rawat; ?></td>
+                                        <td id="no-rawat"><?= $reg->no_rawat; ?></td>
                                         <td><?= $reg->tgl_registrasi; ?></td>
                                         <td><?= $reg->jam_reg; ?></td>
                                         <td><?= $reg->kd_dokter; ?></td>
@@ -357,10 +360,10 @@
 
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
+                            <tbody id="DataTablesPoliBody">
+                                <tr id="rc-menu">
                                     <?php foreach ($rujukan as $rujuk) : ?>
-                                        <td><?= $rujuk->no_rawat; ?></td>
+                                        <td id="no-rawat"><?= $rujuk->no_rawat; ?></td>
                                         <td><?= $rujuk->tgl_registrasi; ?></td>
                                         <td> <?= $rujuk->jam_reg; ?></td>
                                         <td><?= $rujuk->kd_dokter; ?></td>
@@ -405,31 +408,34 @@ $this->load->view('templates/admin/copyright');
         searching: true
     });
 
-    $(function() {
-
-        var $contextMenu = $("#contextMenu");
-
-        $("body").on("contextmenu", "table tr", function(e) {
-            $contextMenu.css({
-                display: "block",
-                left: e.pageX,
-                top: e.pageY
-            });
-            debugger;
-            return false;
-        });
-
-        $('html').click(function() {
-            $contextMenu.hide();
-        });
-
-        $("#contextMenu li a").click(function(e) {
-            var f = $(this);
-            debugger;
-        });
-
-    });
+    // $(function() {
+    //
+    //     var $contextMenu = $("#contextMenu");
+    //
+    //     $("body").on("contextmenu", "table tr", function(e) {
+    //         $contextMenu.css({
+    //             display: "block",
+    //             left: e.pageX,
+    //             top: e.pageY
+    //         });
+    //         debugger;
+    //         return false;
+    //     });
+    //
+    //     $('html').click(function() {
+    //         $contextMenu.hide();
+    //     });
+    //
+    //     $("#contextMenu li a").click(function(e) {
+    //         var f = $(this);
+    //         debugger;
+    //     });
+    //
+    // });
 </script>
+
+
+
 <script type="text/javascript">
     $(document).ready(function() {
 
@@ -492,4 +498,20 @@ $('.table-responsive').on('hide.bs.dropdown', function() {
     $('.table-responsive').css("overflow", "auto");
 })
 
+</script>
+
+<script>
+$('#form-add-reg').hide();
+var btnAddReg = false;
+  $('#btn-add-reg').click(function(){
+    if(btnAddReg){
+      $('#form-add-reg').hide();
+      $(this).find('i').attr('class','fa fa-caret-down');
+      btnAddReg = false;
+    }else {
+      $('#form-add-reg').show();
+      $(this).find('i').attr('class','fa fa-caret-up');
+      btnAddReg = true;
+    }
+  });
 </script>

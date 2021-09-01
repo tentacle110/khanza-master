@@ -1,3 +1,10 @@
+<style>
+  #pencarian{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+</style>
 <div class="xs-pd-20-10 pd-ltr-20">
     <!-- menu -->
     <?php
@@ -5,9 +12,21 @@
     ?>
     <!-- menu -->
 </div>
-<div class="container-fluid mt-5">
-  <!-- <div class="row"> -->
-    <div class="row">
+<div class="container-fluid">
+  <div class="row m-4">
+    <div class="col-lg-12 d-flex align-items-center">
+      <div id="pencarian">
+          <input type="text" class="form-control" id="searchkey" value="">
+      </div>
+      <button type="button" class="btn" onclick="btn_search()"><i id="ikon-cari" class="fa fa-search text-primary p-2 border rounded-circle" style="font-size:1.5em;"></i></button>
+    </div>
+  </div>
+
+  <div class="row m-4" id="paste-tab">
+
+  </div>
+
+    <div class="row mt-4" id="copy-tab">
         <div class="col-3">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link active" id="v-pills-a-tab" data-toggle="pill" href="#v-pills-a" role="tab" aria-controls="v-pills-a" aria-selected="true"><span class="badge bg-info">A</span> Reistrasi, Tagihan Ranap & Ralan, Pelayanan & Billing Pasien</a>

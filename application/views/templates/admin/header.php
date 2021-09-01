@@ -25,6 +25,10 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/vendors/styles/style.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/vendors/DataTables-1.10.25/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/vendors/select2.min.css" />
+    <!-- contex.js -->
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/src/styles/context.standalone.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
     <!-- Bootstrap 5-->
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/vendors/bootstrap-5.0.2/css/bootstrap.min.css"/>
     <script src="<?= base_url(); ?>assets/vendors/js/bootstrap-5.0.2/css/bootstrap.min.js"></script>

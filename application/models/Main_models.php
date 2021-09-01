@@ -180,13 +180,25 @@ class Main_models extends CI_Model
     }
 
 
+    // public function join_rujukan_poli()
+    // {
+    //     $this->db->select('*');
+    //     $this->db->from('rujukan_internal_poli');
+    //     $this->db->join('reg_periksa', 'reg_periksa.no_rawat = rujukan_internal_poli.no_rawat', 'left');
+    //     $this->db->join('dokter', 'dokter.kd_dokter = rujukan_internal_poli.kd_dokter', 'left');
+    //     $this->db->join('poliklinik', 'poliklinik.kd_poli = rujukan_internal_poli.kd_poli', 'left');
+    //     $this->db->join('pasien', 'pasien.no_rkm_medis = reg_periksa.no_rkm_medis', 'left');
+    //     $this->db->join('penjab', 'penjab.kd_pj = reg_periksa.kd_pj', 'left');
+    //     $query = $this->db->get();
+    //     return $query;
+    // }
     public function join_rujukan_poli()
     {
         $this->db->select('*');
-        $this->db->from('rujukan_internal_poli');
-        $this->db->join('reg_periksa', 'reg_periksa.no_rawat = rujukan_internal_poli.no_rawat', 'left');
-        $this->db->join('dokter', 'dokter.kd_dokter = rujukan_internal_poli.kd_dokter', 'left');
-        $this->db->join('poliklinik', 'poliklinik.kd_poli = rujukan_internal_poli.kd_poli', 'left');
+        $this->db->from('reg_periksa');
+        //$this->db->join('rujuk', 'rujuk.no_rawat = reg_periksa.no_rawat', 'left');
+        $this->db->join('dokter', 'dokter.kd_dokter = reg_periksa.kd_dokter', 'left');
+        $this->db->join('poliklinik', 'poliklinik.kd_poli = reg_periksa.kd_poli', 'left');
         $this->db->join('pasien', 'pasien.no_rkm_medis = reg_periksa.no_rkm_medis', 'left');
         $this->db->join('penjab', 'penjab.kd_pj = reg_periksa.kd_pj', 'left');
         $query = $this->db->get();
@@ -243,7 +255,7 @@ class Main_models extends CI_Model
 </div>');
         return $this->datatables->generate();
     }
-    
+
     // Dokter CRUD Function
     public function get_nik()
     {
